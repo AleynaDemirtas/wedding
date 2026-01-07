@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özge & Doğuhan - Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sage-green: #8A9A5B; 
+            --text-gray: #4A4A4A;
+        }
+
+        body {
+            background-color: #FAF9F6;
+            color: var(--text-gray);
+            font-family: 'Cormorant Gramamond', serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .card {
+            background: white;
+            max-width: 450px;
+            width: 90%;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            z-index: 1;
+        }
+
+        /* Monogram */
+        .monogram {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: var(--text-gray);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .monogram-leaf {
+            width: 30px;
+            fill: var(--sage-green);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            margin: 10px 0;
+        }
+
+        .families {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            opacity: 0.7;
+        }
+
+        /* Floral Background Elements - Built-in Code */
+        .floral-svg {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            opacity: 0.3;
+            z-index: -1;
+            fill: var(--sage-green);
+        }
+
+        .bottom-left { bottom: -20px; left: -40px; }
+        .bottom-right { bottom: -20px; right: -40px; transform: scaleX(-1); }
+
+        .date { font-size: 1.5rem; margin-bottom: 20px; }
+        .event { font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin: 5px 0; }
+        .msg { font-style: italic; margin: 35px 0; line-height: 1.6; }
+        .addr { font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; }
+
+        .rsvp-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid var(--sage-green);
+            color: var(--sage-green);
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            transition: 0.3s;
+        }
+
+        .rsvp-btn:hover { background: var(--sage-green); color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <svg class="floral-svg bottom-left" viewBox="0 0 100 100">
+            <path d="M10,90 Q30,50 50,90 T90,50 M30,70 Q10,60 20,40 T40,60 M70,80 Q50,70 60,50 T80,70" fill="none" stroke="currentColor" stroke-width="0.5"/>
+            <circle cx="20" cy="40" r="2" fill="currentColor"/>
+            <circle cx="80" cy="70" r="2" fill="currentColor"/>
+        </svg>
+
+        <svg class="floral-svg bottom-right" viewBox="0 0 100 100">
+            <path d="M10,90 Q30,50 50,90 T90,50 M30,70 Q10,60 20,40 T40,60 M70,80 Q50,70 60,50 T80,70" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        </svg>
+
+        <div class="monogram">
+            Ö 
+            <svg class="monogram-leaf" viewBox="0 0 24 24">
+                <path d="M17,8C8,10 5,16 5,16C5,16 9,15 14,12C17.5,9.8 17,8 17,8Z M8,12C12,10 14,7 14,7C14,7 12,9 8,12Z"/>
+            </svg>
+            D
+        </div>
+
+        <h1>ÖZGE & DOĞUHAN AZMİ</h1>
+        <div class="families">BOZBEY-ÖZTURAN & GÜNGÖRÜRLER AİLELERİ</div>
+
+        <div class="date">15 / 02 / 2026</div>
+        <div class="event">NİKAH TÖRENİ - 18:00</div>
+        <div class="event">DÜĞÜN - 19:00</div>
+
+        <div class="msg">"Bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız."</div>
+
+        <div class="addr">
+            <strong>Adres: La Win</strong><br>
+            Bahçelerarası, Yıldız Sk. No:19<br>Balçova / İZMİR
+        </div>
+
+        <a href="https://wa.me/905000000000" class="rsvp-btn">L.C.V. İÇİN TIKLAYINIZ</a>
+    </div>
+
+</body>
+</html>
